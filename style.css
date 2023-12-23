@@ -5,25 +5,67 @@
 }
 body{
     font-family: 'Pangolin';
-    background-image: linear-gradient(to right, white, cornflowerblue);
+    background-image: linear-gradient(to right, grey, aqua, grey);
 }
-.head{
-    border: 5px solid goldenrod;
-    border-radius: 20px;
+.container{
+    border: 3px solid white;
+    padding: 60px;
+    margin: 10px;
     width: auto;
-    height: 600px;
-    padding: 10px;
-    margin: 25px;
-    color: crimson;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-items: center;
-
+    height: auto;
+    padding-top: 30px;
+    border-radius: 30px;
+   
+    
+    
+    
 }
-.ball{
-    border: 5px solid green;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+.main{
+    padding-bottom: 40px;
+    width: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+nav{
+    text-decoration: none;
+    color: #fff;
+    
+    
+    
+    width: auto;
+    padding: 10px;
+}
+li{
+    display: flex;
+    width: auto;
+    
+    
+}
+ul{
+    display: flex;
+    width: auto;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    border: #fff solid 3px;
+    padding: 10px;
+    border-radius: 15px;
+}
+nav a:hover{
+    color: gray;
+    background-color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+}
+p{
+    margin-bottom: 50px;
+    font-size: 21px;
+}
+br{
+    color: #fff;
 }
