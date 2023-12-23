@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Pangolin';
+    background-image: linear-gradient(to right, white, cornflowerblue);
+}
+.head{
+    border: 5px solid goldenrod;
+    border-radius: 20px;
+    width: auto;
+    height: 600px;
+    padding: 10px;
+    margin: 25px;
+    color: crimson;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+
+}
+.ball{
+    border: 5px solid green;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
