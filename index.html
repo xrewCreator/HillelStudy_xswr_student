@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <form action="https://echo.free.beeceptor.com/" method="POST">
+    <!-- Types of Forms -->
+
+    <!-- <div class="container">
+      <form action="https://echo.free.beeceptor.com/" method="POST" id="test-from">
         <input
           type="text"
           name="username"
@@ -39,9 +41,128 @@
         <input type="checkbox" name="chk1" id="chk1" value="parot" />Parot
         <input type="checkbox" name="chk1" id="chk1" value="mouse" />Mouse
         <input type="hidden" name="discount" value="30% off" />
-        <input type="range" name="range-qnt" id="rng1" min="10" max="50" step="10">50
-        <input type="number" name="age" id="age" min="0" max="120">
+        <input
+          type="range"
+          name="range-qnt"
+          id="rng1"
+          min="10"
+          max="50"
+          step="10"
+        />50
+        <input type="number" name="age" id="age" min="0" max="120" />
+        
         <input type="submit" value="Submit" />
+        <button type="submit" form="from-test"></button>
+      </form>
+    </div> -->
+
+    <!-- Групування та іменування полів -->
+
+    <!-- <div class="container">
+      <form action="https://echo.free.beeceptor.com" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required />
+
+        <div>
+          <label
+            >Password
+            <input type="password" name="password" required />
+          </label>
+        </div>
+
+        <input type="image" src="./img/" alt="submit button" width="20" />
+
+        <input type="submit" value="Send">
+      </form>
+    </div> -->
+
+    <!-- File Upload -->
+
+    <!-- <div class="container">
+      <form action="https://echo.free.beeceptor.com" method="POST">
+        <input
+          type="file"
+          name="uploud"
+          id="file_up1"
+          accept="image/*"
+          multiple
+        />
+        <button type="submit">Upload to server</button>
+      </form>
+    </div> -->
+
+    <!-- DATALIST опції вводу -->
+
+    <!-- <div class="container">
+      <form
+        action="https://echo.free.beeceptor.com"
+        method="POST"
+        id="specific_"
+      >
+        <input type="text" name="city" id="city" />
+        <input
+          type="color"
+          name="color"
+          id="fav_color"
+          list="selected_colors"
+          value="#ff0000"
+        />
+        <datalist id="selected_colors">
+          <option value="#ff0000">Red</option>
+          <option value="#ffdddd">Red2</option>
+          <option value="#ff8888">Red3</option>
+        </datalist>
+        <datalist id="cities_list">
+          <option value="Kharkiv">Kharkiv</option>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Odesa">Odesa</option>
+        </datalist>
+        <button type="submit">Send</button>
+      </form>
+    </div> -->
+
+    <!-- Text area -->
+
+    <!-- <form action="https://echo.free.beeceptor.com" method="GET" id="area_">
+      <textarea
+        name="comment"
+        id="comment"
+        cols="30"
+        rows="10"
+        maxlength="600"
+        style="resize: none"
+      >
+      </textarea>
+    </form> -->
+
+    <!-- Option grouping -->
+
+    <!-- <form action="https://echo.free.beeceptor.com" method="GET" id="area_">
+        <fieldset>
+            <legend>We are learning that technology, choose:</legend>
+            <br>
+            <input type="radio" name="tech" id="html">HTML
+            <input type="radio" name="tech" id="js">JS
+            <input type="radio" name="tech" id="ajax">AJAX
+        </fieldset>
+
+    </form> -->
+
+    <!-- Select -->
+    <div class="containe">
+      <form action="https://echo.free.beeceptor.com" method="GET" id="select_">
+        <label for="city">Your city:</label>
+        <select name="city" id="city">
+          <option value="-" disabled>Choose your city</option>
+
+          <option value="Dnipro">Dnipro</option>
+          <option value="Jitomer">Jitomir</option>
+          <option value="Dnipro2">Dnipro</option>
+          <option value="Dnipro3">Dnipro</option>
+          <option value="Dnipro4">Dnipro</option>
+        </select>
+        <input type="text" name="name" id="name" autocomplete="" autofocus />
+        <button type="submit">Send</button>
       </form>
     </div>
   </body>
