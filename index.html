@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="https://echo.free.beeceptor.com/" method="POST">
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your nickname"
+          id="username"
+        />
+        <input
+          type="password"
+          name="pwd"
+          id="pwd1"
+          minlength="5"
+          placeholder="Enter your password"
+        />
+        <input
+          type="email"
+          name="User_email"
+          id="email"
+          placeholder="Enter email here"
+        />
+        <input type="color" name="color" id="color" />
+        <input type="radio" name="group1" id="rad" value="man" /> Men
+        <br />
+        <input type="radio" name="group1" id="rad" value="woman" /> Women
+        <br />
+        <h4>What pets do you have?</h4>
+        <input type="checkbox" name="chk1" id="chk1" value="cat" />Cat
+        <input type="checkbox" name="chk1" id="chk1" value="dog" />Dog
+        <input type="checkbox" name="chk1" id="chk1" value="parot" />Parot
+        <input type="checkbox" name="chk1" id="chk1" value="mouse" />Mouse
+        <input type="hidden" name="discount" value="30% off" />
+        <input type="range" name="range-qnt" id="rng1" min="10" max="50" step="10">50
+        <input type="number" name="age" id="age" min="0" max="120">
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>
