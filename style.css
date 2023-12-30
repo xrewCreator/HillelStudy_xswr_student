@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root {
+    font-size: 18px;
+    background-image: linear-gradient(to right, bisque, grey);
+    line-height: 1.5;
+    font-family: 'Pangolin';
+    color: rgb(65, 65, 65)
+}
+#Me{
+    width: 400px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px white;
+}
+#Me:hover{
+    box-shadow: 0px 0px 20px black;
+    transition: 0.5s;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+}
+main a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+}
+span{
+    color: aqua;
+    text-shadow: 0px 0px 10px white;
+    background: rgba(0, 0, 0, 0.4);
+}
