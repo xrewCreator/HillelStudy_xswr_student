@@ -1,0 +1,11 @@
+
+.container{
+    margin: 10px;
+    
+}
+label,
+input,
+button,
+select{
+    margin-bottom: 15px;
+}

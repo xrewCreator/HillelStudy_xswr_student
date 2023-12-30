@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="index2.html" method="GET" id="form">
+        <div class="d">
+          <tr>
+            <td><label for="name">First name</label></td>
+
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter first name..."
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="d">
+          <tr>
+            <td><label for="lastname">Last name</label></td>
+            <td>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Enter last name..."
+              />
+            </td>
+          </tr>
+        </div>
+        <div class="d">
+          <tr>
+            <td><label for="email">Emai:</label></td>
+            <td><input type="email" name="email" id="email" /></td>
+          </tr>
+        </div>
+        <div class="d">
+          <tr>
+            <td><label for="area">Message</label></td>
+
+            <td>
+              <textarea name="area" id="area" cols="20" rows="2"></textarea>
+            </td>
+          </tr>
+        </div>
+        <div class="d">
+          <tr>
+            <td>
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </td>
+          </tr>
+        </div>
+        <div class="d">
+          <tr>
+            <td>
+              <label for="age">Age:</label>
+              <input type="number" name="age" id="age" />
+            </td>
+          </tr>
+        </div>
+        <div class="d">
+          <tr>
+            <td>
+              <label for="birthday">Birthday</label>
+              <input type="date" name="birthday" id="birthday" />
+            </td>
+          </tr>
+        </div>
+        <div class="d">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
