@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+}
+body {
+}
+.container {
+  /* display: flex; */
+  margin: 0 auto;
+  max-width: 1110px;
+  text-align: center;
+  /* flex-direction: column; */
+
+  height: auto;
+}
+header {
+  background-color: rgb(245, 245, 229);
+  padding: 20px;
+  padding-left: 140px;
+}
+.Call {
+  display: inline-block;
+}
+ul {
+  display: inline-block;
+
+  padding: 0;
+}
+li {
+  display: inline;
+  margin-right: 10px;
+}
+header h2 {
+  font-family: "Courgette-Regular";
+  font-size: 22px;
+  padding-right: 20px;
+  /* margin-left: 100px; */
+}
+header span {
+  color: rgb(38, 209, 201);
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+header a:hover {
+  text-shadow: 0px 0px 10px;
+}
+.main {
+  background-color: rgb(248, 47, 87);
+  height: 370px;
+  font-size: 26px;
+  text-align: center;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.a {
+  margin-left: 40px;
+}
+.kn {
+  font-family: "RoblotxVintage";
+}
+.container {
+  text-align: left;
+  background-color: rgb(231, 231, 231);
+}
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.all {
+  padding: 80px;
+  padding-left: 120px;
+}
+.lor {
+  width: 430px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: px;
+  padding-bottom: 20px;
+  background-color: rgb(221, 221, 221);
+  font-size: 18px;
+}
+.content h3 {
+  font-size: 25px;
+  padding-top: 20px;
+}
+.about {
+  padding-bottom: 40px;
+  color: crimson;
+  font-size: 25px;
+  padding-left: 20px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+.img1 {
+  width: 430px;
+  height: 257px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+}
+.foot1 {
+  padding-bottom: 15px;
+}
+.foot1 a {
+  color: black;
+}
+.foot2 {
+  font-size: 22px;
+}
+i {
+  padding-left: 10px;
+}
+i:hover {
+  color: crimson;
+  cursor: pointer;
+}
+
+.css-img {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-around;
+  padding-left: 90px;
+  padding-right: 90px;
+ 
+
+}
+.card > img {
+  width: 100%;
+}
+.card {
+  font-size: 16px;
+  min-width: 100px;
+  max-width: 250px;
+  padding: 1em;
+  background-color: rgb(255, 255, 245);
+  border: 1px solid rgb(231, 230, 230);
+  border-radius: 10px;
+}
+.card h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.card p {
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.card a {
+  color: crimson;
+  font-size: 13px;
+}
+.fea {
+  color: crimson;
+  font-size: 25px;
+  padding-left: 137px;
+  padding-bottom: 20px;
+}

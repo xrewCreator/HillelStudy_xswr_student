@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Courgette-Regular";
+  src: url("./Courgette-Regular.woff2") format("woff2"),
+    url("./Courgette-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RoblotxVintage";
+  src: url("./RoboltxVintage.woff2") format("woff2");
+
+  font-weight: 400;
+  font-style: normal;
+}
