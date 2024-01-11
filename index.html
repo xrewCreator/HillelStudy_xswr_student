@@ -6,6 +6,10 @@
     <title>Bootstrap page</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -13,7 +17,10 @@
     />
   </head>
   <body>
-    <nav id="menu" class="navbar navbar-dark bg-dark navbar-expand-md">
+    <nav
+      id="menu"
+      class="navbar navbar-dark bg-dark navbar-expand-md fixed-top"
+    >
       <div class="container">
         <a href="#" class="navbar-brand">FrontEnd</a>
 
@@ -45,22 +52,26 @@
         <div
           class="d-flex flex-column-reverse flex-md-fow justify-content-between align-items-center"
         >
-          <div class="order-md-0 order-1">
-            <h1 class="my-3">
-              FrontEnd <span class="text-primary">Web</span> Developer
-            </h1>
-            <p class="my-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              iure porro deleniti! Sequi saepe impedit consectetur, officia cum
-              eveniet doloremque at praesentium omnis. Cupiditate alias maiores,
-              totam ab unde vero.
-            </p>
+          <!-- <div class="order-md-0 order-1"> -->
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h1 class="my-3">
+                FrontEnd <span class="text-primary">Web</span> Developer
+              </h1>
+              <p class="my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                iure porro deleniti! Sequi saepe impedit consectetur, officia
+                cum eveniet doloremque at praesentium omnis. Cupiditate alias
+                maiores, totam ab unde vero.
+              </p>
+
+              <img
+                src="./img/showcase.jpg"
+                alt="showcase nerd"
+                class="img-fluid ms-md-3 w-50 order-md-1 order-0"
+              />
+            </div>
           </div>
-          <img
-            src="./img/showcase.jpg"
-            alt="showcase nerd"
-            class="img-fluid ms-3 w-50 order-md-1 order-0"
-          />
         </div>
       </div>
     </section>
@@ -83,7 +94,7 @@
       </div>
     </section>
     <section class="bg-light">
-      <div class="container">
+      <!-- <div class="container">
         <div class="row text-center gap-4">
           <div class="col-6 col-lg-3 col-md-4 bg-dark text-light">
             <h4>Specs1</h4>
@@ -95,11 +106,110 @@
             <h4>Specs3</h4>
           </div>
           <div class="col-6 col-lg-3 col-md-4 bg-dark text-light">
-            <h4>Specs3</h4>
+            <h4>Specs4</h4>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <section id="rect_apps" class="bg-light p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-lg-4">
+            <div class="card bg-dark text-light">
+              <div class="card-body d-flex flex-column text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-filetype-jsx"></i>
+                </div>
+                <h3 class="card-text">React додатки</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem atque quaerat dolores in nisi doloremque?
+                </p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card bg-dark text-light">
+              <div class="card-body d-flex flex-column text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-filetype-html"></i>
+                </div>
+                <h3 class="card-text">HTML верстка</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem atque quaerat dolores in nisi doloremque?
+                </p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card bg-dark text-light">
+              <div class="card-body d-flex flex-column text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-motherboard"></i>
+                </div>
+                <h3 class="card-text">Computer Science</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem atque quaerat dolores in nisi doloremque?Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Esse, earum.
+                </p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="learn">
+      <div class="container">
+        <div class="row align-items-center justify-content-md-between">
+          <div class="col-lg text-center">
+            <img src="./img/fundament" alt="Html pic" class="img-fluid" />
+          </div>
+          <div class="col-lg text-center">
+            <h2>Learn base of Web</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              earum aut corrupti sint autem omnis quidem repudiandae, vero unde
+              blanditiis quia a distinctio, ipsam quos cupiditate maxime debitis
+              esse rem?
+            </p>
+            <a href="#" class="btn btn-dark mt-3"
+              ><i class="bi bi-chevron-compact-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5 bg-light">
+      <div class="container">
+        <div class="row text-center g4">
+          <div class="col-lg my-auto">
+            <h2 class="text-center mb-4">Контакти:</h2>
+            <ul class="list-group-flush">
+              <li class="list-group-item">
+                <span class="">Адреса:</span> xxxxxxxxxxxxxxx
+              </li>
+              <li class="list-group-item">
+                <span class="">Телефон:</span>
+                <a href="tel:+38009939939">+38009939939</a>
+              </li>
+              <li class="list-group-item">
+                <span class="">Email:</span> hhsome_@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg">
+
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
