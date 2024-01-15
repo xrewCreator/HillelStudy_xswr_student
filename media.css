@@ -1,0 +1,5 @@
+@media screen add (max-width: 796px) {
+  body {
+    display: grid;
+  }
+}
