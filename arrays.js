@@ -47,21 +47,21 @@ console.log("Довжина імен тваринок: ", resultArray);
 // ------------------------------ Filter -------------------------------
 // arr.filter(function(item, index, array, thisArg))
 
-console.log(
-  "Фільтр менше 5: ",
-  resultArray.filter((num) => num <= 4)
-);
+// console.log(
+//   "Фільтр менше 5: ",
+//   resultArray.filter((num) => num <= 4)
+// );
 
-console.log(
-  "Фільтер розлого:",
-  resultArray.filter(function (num) {
-    if (num <= 4) {
-      return true;
-    } else {
-      return false;
-    }
-  })
-);
+// console.log(
+//   "Фільтер розлого:",
+//   resultArray.filter(function (num) {
+//     if (num <= 4) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   })
+// );
 
 // Наповнення та вилучення елементів
 
@@ -107,3 +107,33 @@ for (let i = 0; i < arr4.length; i++) {
   }
   console.log(arr4[i]);
 }
+
+console.clear();
+console.log(addArray);
+
+// --------------------------------- foreach -----------------------------------
+// arr.foreach(function(item, index, array){})
+
+addArray.forEach((num) => {
+  if (num < 10 && num > 3) {
+    console.log(num);
+  }
+});
+
+// ------------------- .sort(function(a, b){}) ----------------------
+console.log(arr4);
+
+arr4.sort(function (a, b) {
+  // якщо а менше b то повертаємо -1
+  // якщо а більше b то повертаємо +1
+
+  if (a.length > b.length) {
+    return 1;
+  }
+
+  if (a.length < b.length) {
+    return -1;
+  }
+});
+
+console.log(arr4);
