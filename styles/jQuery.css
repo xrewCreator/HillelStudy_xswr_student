@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: bisque;
+  line-height: 1.5;
+}
+header {
+  background-color: burlywood;
+  color: azure;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px #000 solid;
+}
+
+.container {
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+}
+
+.blue {
+  background: rgb(117, 117, 229);
+}
+
+.par2-newcolor {
+  color: chocolate;
+  background-color: darkgray;
+}

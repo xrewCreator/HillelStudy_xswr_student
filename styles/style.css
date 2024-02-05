@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background: #c43;
+    padding: 10px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.blue {
+    background: rgb(117, 117, 229);
+}
