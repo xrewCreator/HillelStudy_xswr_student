@@ -3,26 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
+    <title>AJAX</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <a href="./demojQuery.html">jQuery</a>
-    <header>
-      <h1>Event Bubling</h1>
-    </header>
-    
-    <div class="container">
-      <div class="content first">
-        <p class="inner">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-      </div>
-      <div class="content second">
-        <p class="inner">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      </div>
-      <div class="content third">
-        <p class="inner">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-      </div>
-    </div>
-    <script src="app.js"></script>
+    <form action="https://jsonplaceholder.typicode.com/posts" id="postForm">
+      <input type="text" id="title" placeholder="Title here..."> <br>
+      <textarea name="body" id="body" cols="20" rows="3"></textarea>
+      <input type="submit" value="submit">
+    </form>
+    <div class="result"></div>
+    <script src="./JS/ajax_app.js"></script>
   </body>
 </html>
