@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background-image: linear-gradient(to right, gray, rgb(212, 212, 212), gray);
+  font-family: "Pangolin";
+}
+#form {
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: rgb(150, 150, 150);
+}
+input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  background: lightblue;
+}
+input:focus {
+  background: rgb(122, 199, 224);
+}
+input:hover {
+  border: white 2px solid;
+}
+#form h1{
+    text-align: center;
+    font-size: 40px;
+}
+label{
+    font-size: large;
+}
