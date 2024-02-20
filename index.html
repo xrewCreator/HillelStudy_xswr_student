@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container me-auto ms-auto bg-dark-subtle pb-3">
+      <div class="contact-book">
+        <h1 class="">Contact Book</h1>
+        <form action="GET" class="form-control">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter name..."
+            class="mb-3 w-100"
+          />
+          <br />
+          <label for="number">Number:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="+380 (63) 0000 0000"
+            class="mb-3 w-100"
+          />
+          <br />
+          <label for="id">Id:</label>
+          <input
+            type="number"
+            name="id"
+            id="id"
+            placeholder="Enter Id..."
+            class="mb-3 w-100"
+          />
+          <input type="submit" class="form-control" value="Add to table" id="submit">
+        </form>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="table">
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Id</th>
+            </tr>
+        </thead>
+        <tbody id="user-list"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

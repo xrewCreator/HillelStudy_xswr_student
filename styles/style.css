@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 400px;
+  transition: 1s;
+}
+input{
+    background: rgb(218, 218, 218);
+    border: none;
+    padding: 5px;
+    transition: 1s;
+}
+input:focus{
+    background: white;
+
+}
+input:hover{
+    border: 2px solid;
+    
+}
