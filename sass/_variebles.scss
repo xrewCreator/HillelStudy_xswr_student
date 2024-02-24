@@ -1,0 +1,37 @@
+// theme colors
+$primary: #2f6cee !default;
+$secondary: #31eda8 !default;
+$error: #ff0000;
+$info: #eed532;
+$accent: #34547A;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+// color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "accent": $accent,
+  "white": #fff,
+  "black": #000,
+  "purple": #9900ff,
+  "orange": #fd7a00,
+  "gray": #EEEFF1,
+);
+
+@debug map-get($colors, "purple");
+
+// Fonts sizes
+$base-font-size: 16px;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.3;
+$font-size-xl: $base-font-size * 2;
+

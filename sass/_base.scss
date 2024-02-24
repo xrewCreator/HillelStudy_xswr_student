@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: $base-padding * 2 $base-padding * 1.5;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container h2 {
+  margin-bottom: $base-margin * 3;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #727272;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h1 {
+  padding: $base-padding * 5;
+  font-size: $base-font-size * 3;
+  margin-left: $base-margin * 27;
+}
+.test {
+  background-color: map-get($colors, "purple");
+  color: $secondary;
+}
+h2 {
+  font-size: $base-font-size * 2;
+}
+// Mixin
+@mixin reset-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  @include reset-list;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.full-width {
+  width: 100%;
+}
+.section {
+  background-color: $accent;
+  margin-top: $base-margin*4;
+  margin-bottom: $base-margin*4;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: $base-padding * 6.35;
+}
+.icon .item{
+  padding-left: $base-padding * 1.5;
+}
+.img {
+  @extend .full-width;
+}
+.fot{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: $base-padding *28;
+}
+.fot .p1{
+  font-size: 25px;
+  padding-bottom: $base-padding*2;
+}
+footer{
+  background-color: $accent;
+  padding: $base-padding*3.25;
+}
+.icon {
+  display: flex;
+  color: #fff;
+  padding: $base-padding  *2;
+}
+.base-video{
+  width: 1110px;
+  height: 600px;
+  
+}
+.video{
+  text-align: center;
+  margin-top: $base-margin*3;
+  margin-bottom: $base-margin*3;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+li {
+  display: flex;
+  padding: $base-padding * 0.4;
+  padding-left: $base-padding * 2;
+  font-size: $base-font-size;
+}
+ul {
+  display: flex;
+}
+nav {
+  width: 646px;
+  margin-bottom: $base-margin * 9;
+  padding-top: $base-padding * 5;
+  margin-left: $base-margin * 30.5;
+}
+.p {
+  margin-bottom: $base-margin * 4;
+
+  width: 540px;
+  height: 67px;
+  margin-left: $base-margin * 32;
+}
+.default-btn {
+  margin-bottom: $base-margin * 12.5;
+  margin-left: $base-margin * 32;
+}
