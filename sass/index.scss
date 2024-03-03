@@ -1,6 +1,7 @@
 // variebles & functions
 @import "variebles";
 
+@import "breakpoints";
 // base layout
 @import "base";
 
@@ -12,3 +13,6 @@
 
 // components (btn, cards, nav)
 @import "components/button";
+
+
+@import "spaces";

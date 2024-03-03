@@ -34,6 +34,13 @@ h1 {
   padding: 3.75rem;
   font-size: 48px;
   margin-left: 20.25rem;
+  color: #000;
+}
+@media (max-width: 680px) {
+  h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .test {
@@ -43,6 +50,14 @@ h1 {
 
 h2 {
   font-size: 32px;
+  color: #000;
+}
+
+@media (min-width: 650px) {
+  .cont2 {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 ul {
@@ -71,9 +86,21 @@ a {
   justify-content: center;
   padding: 4.7625rem;
 }
+@media (max-width: 680px) {
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 680px) {
+  .icon {
+    flex-basis: 50%;
+  }
+}
 
 .icon .item {
-  padding-left: 1.125rem;
+  padding-left: 0.9rem;
 }
 
 .fot {
@@ -102,6 +129,13 @@ footer {
 .base-video {
   width: 1110px;
   height: 600px;
+  flex-wrap: wrap;
+}
+@media (max-width: 680px) {
+  .base-video {
+    width: 600px;
+    height: 400px;
+  }
 }
 
 .video {
@@ -139,10 +173,68 @@ nav {
   height: 67px;
   margin-left: 24rem;
 }
+@media (max-width: 680px) {
+  .p {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .default-btn {
   margin-bottom: 9.375rem;
   margin-left: 24rem;
+}
+@media (max-width: 680px) {
+  .default-btn {
+    margin-left: 11.25rem;
+  }
+}
+
+@media (min-width: 2350px) {
+  .main {
+    display: flex;
+  }
+}
+
+@media (min-width: 2350px) {
+  .cont3 {
+    margin-left: 28.5rem;
+    margin-top: 13.5rem;
+  }
+}
+
+.main-menu {
+  display: block;
+}
+
+@media (max-width: 680px) {
+  .main-menu a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 680px) {
+  .fot {
+    padding-left: 0.75rem;
+  }
+}
+
+.collapse,
+.navbar {
+  display: none;
+}
+@media (max-width: 680px) {
+  .collapse,
+  .navbar {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .navig {
+    display: none;
+  }
 }
 
 .text-primary {
@@ -1410,4 +1502,204 @@ nav {
   border-radius: 20px;
   background-color: #e2e2e2;
   background-color: #fdfdfe;
+}
+
+.m-1 {
+  margin: 0.75rem;
+}
+
+.mx-1 {
+  margin: 0 0.75rem;
+}
+
+.my-1 {
+  margin: 0.75rem 0;
+}
+
+.ml-1 {
+  margin-left: 0.75rem;
+}
+
+.mr-1 {
+  margin-right: 0.75rem;
+}
+
+.p-1 {
+  padding: 0.75rem;
+}
+
+.px-1 {
+  padding: 0 0.75rem;
+}
+
+.my-1 {
+  padding: 0.75rem 0;
+}
+
+.pl-1 {
+  padding-left: 0.75rem;
+}
+
+.pr-1 {
+  margin-right: 0.75rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.mx-2 {
+  margin: 0 1.5rem;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.ml-2 {
+  margin-left: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 1.5rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.px-2 {
+  padding: 0 1.5rem;
+}
+
+.my-2 {
+  padding: 1.5rem 0;
+}
+
+.pl-2 {
+  padding-left: 1.5rem;
+}
+
+.pr-2 {
+  margin-right: 1.5rem;
+}
+
+.m-3 {
+  margin: 2.25rem;
+}
+
+.mx-3 {
+  margin: 0 2.25rem;
+}
+
+.my-3 {
+  margin: 2.25rem 0;
+}
+
+.ml-3 {
+  margin-left: 2.25rem;
+}
+
+.mr-3 {
+  margin-right: 2.25rem;
+}
+
+.p-3 {
+  padding: 2.25rem;
+}
+
+.px-3 {
+  padding: 0 2.25rem;
+}
+
+.my-3 {
+  padding: 2.25rem 0;
+}
+
+.pl-3 {
+  padding-left: 2.25rem;
+}
+
+.pr-3 {
+  margin-right: 2.25rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.mx-4 {
+  margin: 0 3rem;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.ml-4 {
+  margin-left: 3rem;
+}
+
+.mr-4 {
+  margin-right: 3rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.px-4 {
+  padding: 0 3rem;
+}
+
+.my-4 {
+  padding: 3rem 0;
+}
+
+.pl-4 {
+  padding-left: 3rem;
+}
+
+.pr-4 {
+  margin-right: 3rem;
+}
+
+.m-5 {
+  margin: 3.75rem;
+}
+
+.mx-5 {
+  margin: 0 3.75rem;
+}
+
+.my-5 {
+  margin: 3.75rem 0;
+}
+
+.ml-5 {
+  margin-left: 3.75rem;
+}
+
+.mr-5 {
+  margin-right: 3.75rem;
+}
+
+.p-5 {
+  padding: 3.75rem;
+}
+
+.px-5 {
+  padding: 0 3.75rem;
+}
+
+.my-5 {
+  padding: 3.75rem 0;
+}
+
+.pl-5 {
+  padding-left: 3.75rem;
+}
+
+.pr-5 {
+  margin-right: 3.75rem;
 }/*# sourceMappingURL=index.css.map */

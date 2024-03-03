@@ -13,6 +13,7 @@
   box-sizing: border-box;
   text-align: center;
 }
+
 .container h2 {
   margin-bottom: $base-margin * 3;
 }
@@ -32,13 +33,20 @@ h1 {
   padding: $base-padding * 5;
   font-size: $base-font-size * 3;
   margin-left: $base-margin * 27;
+  color: #000;
+  @include sm {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
 .test {
   background-color: map-get($colors, "purple");
   color: $secondary;
 }
 h2 {
   font-size: $base-font-size * 2;
+  color: #000;
 }
 // Mixin
 @mixin reset-list {
@@ -46,7 +54,12 @@ h2 {
   padding: 0;
   margin: 0;
 }
-
+.cont2 {
+  @include my_brake_point($bp: 650px) {
+    margin: 0;
+    padding: 0;
+  }
+}
 ul {
   @include reset-list;
 }
@@ -60,48 +73,61 @@ a {
 }
 .section {
   background-color: $accent;
-  margin-top: $base-margin*4;
-  margin-bottom: $base-margin*4;
+  margin-top: $base-margin * 4;
+  margin-bottom: $base-margin * 4;
 }
 .icons {
   display: flex;
   justify-content: center;
   padding: $base-padding * 6.35;
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-.icon .item{
-  padding-left: $base-padding * 1.5;
+.icon {
+  @include sm {
+    flex-basis: 50%;
+  }
+}
+.icon .item {
+  padding-left: $base-padding * 1.2;
 }
 .img {
   @extend .full-width;
 }
-.fot{
+.fot {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-left: $base-padding *28;
+  padding-left: $base-padding * 28;
 }
-.fot .p1{
+.fot .p1 {
   font-size: 25px;
-  padding-bottom: $base-padding*2;
+  padding-bottom: $base-padding * 2;
 }
-footer{
+footer {
   background-color: $accent;
-  padding: $base-padding*3.25;
+  padding: $base-padding * 3.25;
 }
 .icon {
   display: flex;
   color: #fff;
-  padding: $base-padding  *2;
+  padding: $base-padding * 2;
 }
-.base-video{
+.base-video {
   width: 1110px;
   height: 600px;
-  
+  flex-wrap: wrap;
+  @include sm {
+    width: 600px;
+    height: 400px;
+  }
 }
-.video{
+.video {
   text-align: center;
-  margin-top: $base-margin*3;
-  margin-bottom: $base-margin*3;
+  margin-top: $base-margin * 3;
+  margin-bottom: $base-margin * 3;
 }
 
 img {
@@ -117,6 +143,7 @@ li {
 ul {
   display: flex;
 }
+
 nav {
   width: 646px;
   margin-bottom: $base-margin * 9;
@@ -129,8 +156,57 @@ nav {
   width: 540px;
   height: 67px;
   margin-left: $base-margin * 32;
+  @include sm {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
+
 .default-btn {
   margin-bottom: $base-margin * 12.5;
   margin-left: $base-margin * 32;
+  @include sm {
+    margin-left: $base-margin * 15;
+  }
 }
+.main {
+  @include xl {
+    display: flex;
+  }
+}
+.cont3 {
+  @include xl {
+    margin-left: $base-margin * 38;
+    margin-top: $base-margin * 18;
+  }
+}
+.main-menu{
+  display: block;
+  
+}
+.main-menu a{
+  @include sm{
+    color: #fff;
+  }
+}
+
+.fot {
+  @include sm {
+    padding-left: $base-padding;
+  }
+}
+.collapse,
+.navbar {
+  display: none;
+  @include sm {
+    display: block;
+    margin-left: auto;
+  }
+}
+.navig {
+  @include sm {
+    display: none;
+
+  }
+}
+
