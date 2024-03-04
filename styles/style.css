@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px white;
+  border: 2px solid gray;
+}
+select {
+  border: none;
+  background: #777;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+}
+select:hover {
+  color: #777;
+  background: #fff;
+  
+}
