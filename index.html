@@ -3,15 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Films</title>
+    <title>SetInterval</title>
     <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
     
+    <div class="container">
+      <form id="timerForm">
+        <h1>Лічильник часу роботи користувача</h1>
+        <label for="time">Введіть час</label>
+        <input type="number" id="time" value="1" min="1" />
+        <div class="buttons">
+          <button
+            type="submit"
+            class="btn but1 btn-dark bg-info rounded-start-circle"
+          >
+            Start Timer
+          </button>
+          <button
+            type="button"
+            id="stop"
+            class="btn but2 btn-dark bg-info rounded-end-circle"
+          >
+            End Timer
+          </button>
+          
+        </div>
+      </form>
+      <div class="child-container">
+        <div id="progress">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

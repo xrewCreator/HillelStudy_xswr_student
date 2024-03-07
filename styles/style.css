@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Pangolin";
+}
+
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+form {
+  background-color: #00000080;
+  min-height: 300px;
+  border-radius: 40% 40% 15% 15%;
+  padding-top: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+input {
+  width: 90%;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+}
+input:focus {
+  box-shadow: 5px 5px 15px 5px white;
+}
+.but1:hover {
+  font-size: 20px;
+  box-shadow: 1px 1px 10px white;
+}
+.but2:hover {
+  font-size: 20px;
+  box-shadow: 1px 1px 10px white;
+}
+.child-container {
+  background-color: #00000080;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 15% 15% 40% 40%;
+  padding-top: 40px;
+}
+
+#progress {
+  width: 100%;
+  background-color: rgb(168, 168, 168);
+}
+
+#progress-bar {
+  width: 0%;
+  height: 30px;
+  background-color: rgb(66, 201, 224);
+}
+#progress-bar:hover{
+    box-shadow: 5px 5px;
+}
