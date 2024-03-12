@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Films</title>
+    <title>HomeWorkCanvasAnimation</title>
     <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    
+
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    
-    <script src="app.js"></script>
+    <h1>Space Invaders</h1>
+    <canvas id="canvas-animation" width="600" height="600">
+      Ваш браузер не підтримує Canvas
+    </canvas>
+
+    <img src="./img/ship5.png" alt="ship" id="source" />
+
+    <script src="ship.js"></script>
+    <script src="bullet.js"></script>
   </body>
 </html>
