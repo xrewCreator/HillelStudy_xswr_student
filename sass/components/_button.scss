@@ -1,0 +1,60 @@
+@use "sass:color";
+
+@mixin btn($bg-color: #e2e2e2) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: $base-padding $base-padding * 2;
+  border-radius: $base-border-radius;
+  background-color: $bg-color;
+}
+@mixin default-btn($bg-color: #34547A) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: $base-padding *2 $base-padding * 6.85;
+  background-color: $bg-color;
+  color: #fff
+}
+
+// Default color example
+.btn {
+  @include btn;
+}
+
+// Default btn 
+.default-btn{
+  @include default-btn;
+}
+// buttons with custom colors
+@each $key, $val in $colors {
+  .btn-#{$key} {
+    @include btn($val);
+
+    // if statement
+
+    @if ($val == #000) {
+      color: map-get($colors, "white");
+    }
+
+    @if (color.blackness($val) >1) {
+      color: map-get($colors, "white");
+    }
+
+    &:hover {
+      background-color: lighten($val, $amount: 15);
+    }
+  }
+
+  // for loop
+  @for $i from 1 through 9 {
+    // Example: btn-orange-light-7
+    .btn-#{$key}-light-#{$i} {
+        @include btn;
+        background-color: mix(white, $val, $i * 10%);
+    }
+  }
+  
+}

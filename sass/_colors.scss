@@ -1,0 +1,18 @@
+@each $key, $val in $colors {
+  // text-primary, text-error, text-white
+  .text-#{$key} {
+    // #{} підстановка значень змінних як тесту
+    color: $val;
+  }
+
+  // тут & - це скорочення батьківського селектора
+  .text-hover-#{$key} {
+    &:hover {
+      color: $val;
+    }
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+}

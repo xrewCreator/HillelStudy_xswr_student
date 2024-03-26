@@ -4,14 +4,467 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search Films</title>
-    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
+    />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
     
+    
+    <div class="container">
+      <div class="header mt-4 mb-4  display-flex">
+        <div class="logo display-flex">
+          <img src="./img/logo.jpg" alt="logo" width="35px" height="36px" />
+          <p class="rubik-medium ml-1">
+            Lasles<span class="rubik-bold">VPN</span>
+          </p>
+        </div>
+        <nav class="ml-3 display-nav">
+          <div id="burger-menu">☰</div>
+          <ul class= "rubik-regular" id="nav">
+            <li class="pr-4"><a href="#">About</a></li>
+            <li class="pr-4"><a href="#">Features</a></li>
+            <li class="pr-4"><a href="#">Pricing</a></li>
+            <li class="pr-4"><a href="#">Testimonials</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          
+        </nav>
+        <div class="sign-buttons display-flex">
+          <div class="sign-in mr-2 rubik-medium"><p>Sign In</p></div>
+          <div class="sign-up">
+            <button class="sign-btn ml-1 rubik-medium" type="button">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header mt-6 ">
+        <div class="first-title" width="555px" height="382.44px">
+          <h1 class="rubik-medium mb-2 mt-1">
+            Want anything to be easy with
+            <span class="rubik-bold">LaslesVPN.</span>
+          </h1>
+          <p class="rubik-regular text-dark-gray">
+            Provide a network for all your needs with ease and fun using
+            <span class="rubik-medium">LaslesVPN</span> discover interesting
+            features from us.
+          </p>
+          <button class="button rubik-bold">Get Started</button>
+        </div>
+        <div class="first-img">
+          <img
+            src="./img/first.jpg"
+            alt="first-img"
+            width="611.24px"
+            height="382.44px"
+          />
+        </div>
+      </div>
+      <div class="mainIcons mt-3 display-flex">
+        <div class="icons display-flex">
+          <div class="icon-div mr-2">
+            <i class="text-primary-red fa-solid fa-user"></i>
+          </div>
+
+          <div class="rest">
+            <h3 class="rubik-bold">90+</h3>
+            <p class="rubik-regular text-dark-gray">Users</p>
+          </div>
+        </div>
+        <div class="icons display-flex">
+          <div class="icon-div mr-2">
+            <i class="text-primary-red fa-solid fa-location-dot"></i>
+          </div>
+
+          <div class="rest">
+            <h3 class="rubik-bold mr-1">30+</h3>
+            <p class="rubik-regular ml-1 text-dark-gray">Locations</p>
+          </div>
+        </div>
+        <div class="icons display-flex">
+          <div class="icon-div mr-2">
+            <i class="text-primary-red fa-solid fa-server"></i>
+          </div>
+
+          <div class="rest">
+            <h3 class="rubik-bold">50+</h3>
+            <p class="rubik-regular ml-1 text-dark-gray">Servers</p>
+          </div>
+        </div>
+      </div>
+      <div class="features rubik-regular display-flex">
+        <div class="feature-img">
+          <img
+            src="img/second.jpg"
+            alt="feature-img"
+            width="508px"
+            height="414px"
+          />
+        </div>
+        <div class="feature-div mb-4">
+          <h3 class="rubik-medium text-dark">
+            We Provide Many Features You Can Use
+          </h3>
+          <p>
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </p>
+          <ul class="ul">
+            <li>
+              <i class="fa-solid text-check fa-circle-check"></i> Powerfull
+              online protection.
+            </li>
+            <li>
+              <i class="fa-solid text-check fa-circle-check"></i> Internet
+              without borders.
+            </li>
+            <li>
+              <i class="fa-solid text-check fa-circle-check"></i> Supercharged
+              VPN
+            </li>
+            <li>
+              <i class="fa-solid text-check fa-circle-check"></i> No specific
+              time limits.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="plan mt-15">
+        <div class="standart-title">
+          <h2 class="text-dark rubik-bold mb-2">Choose Your Plan</h2>
+          <p class="text-dark-gray rubik-regular">
+            Let's choose the package that is best for you and explore it happily
+            and cheerfully.
+          </p>
+        </div>
+        <div class="cards mb-3 rubik-regular display-flex">
+          <div class="card">
+            <img
+              src="img/box.jpg"
+              alt="box"
+              width="144.9px"
+              height="165.37px"
+              class="mb-3"
+            />
+            <h3>Free Plan</h3>
+            <ul>
+              <li><i class="fa-regular fa-check"></i> Unlimited Bandwitch</li>
+              <li><i class="fa-regular fa-check"></i> Encrypted Connection</li>
+              <li><i class="fa-regular fa-check"></i> No Traffic Logs</li>
+              <li><i class="fa-regular fa-check"></i> Works on All Devices</li>
+            </ul>
+
+            <h2>Free</h2>
+            <button type="button" class="select rubik-bold">Select</button>
+          </div>
+          <div class="card">
+            <img
+              src="img/box.jpg"
+              alt="box"
+              width="144.9px"
+              height="165.37px"
+              class="mb-3"
+            />
+            <h3>Standart Plan</h3>
+            <ul>
+              <li><i class="fa-regular fa-check"></i> Unlimited Bandwitch</li>
+              <li><i class="fa-regular fa-check"></i> Encrypted Connection</li>
+              <li><i class="fa-regular fa-check"></i> Yes Traffic Logs</li>
+              <li><i class="fa-regular fa-check"></i> Works on All Devices</li>
+              <li><i class="fa-regular fa-check"></i> Connect Anyware</li>
+            </ul>
+
+            <h2>$9 <span class="text-dark-gray">/ mo</span></h2>
+            <button type="button" class="select rubik-bold">Select</button>
+          </div>
+          <div class="card">
+            <img
+              src="img/box.jpg"
+              alt="box"
+              width="144.9px"
+              height="165.37px"
+              class="mb-3"
+            />
+            <h3>Premium Plan</h3>
+            <ul>
+              <li><i class="fa-regular fa-check"></i> Unlimited Bandwitch</li>
+              <li><i class="fa-regular fa-check"></i> Encrypted Connection</li>
+              <li><i class="fa-regular fa-check"></i> Yes Traffic Logs</li>
+              <li><i class="fa-regular fa-check"></i> Works on All Devices</li>
+              <li><i class="fa-regular fa-check"></i> Connect Anyware</li>
+              <li><i class="fa-regular fa-check"></i> Get New Features</li>
+            </ul>
+            <h2 class="h2">$12 <span class="text-dark-gray">/ mo</span></h2>
+            <button type="button" class="select rubik-bold">Select</button>
+          </div>
+        </div>
+      </div>
+      <div class="global-map mt-12">
+        <div class="standart-title">
+          <h2 class="text-dark rubik-bold mb-2">
+            Huge Global Network of Fast VPN
+          </h2>
+          <p class="text-dark-gray rubik-regular">
+            See <span class="rubik-bold">LaslesVPN</span> everywhere to make it
+            easier for you when you move locations.
+          </p>
+        </div>
+        <div class="map">
+          <img
+            src="img/third.jpg"
+            alt="global-map"
+            width="1069px"
+            height="537.77px"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="brands mt-3 display-flex">
+      <img src="img/brands.jpg" alt="brands" width="1135px" height="208px" />
+    </div>
+    <div class="container">
+      <div class="standart-title mt-4">
+        <h2 class="text-dark rubik-bold mb-2">
+          Trusted by Thousands of Happy Customer
+        </h2>
+        <p class="text-dark-gray rubik-regular">
+          These are the stories of our customers who have joined us with great
+          pleasure when using this crazy feature.
+        </p>
+      </div>
+    </div>
+    <section class="mt-5 mb-5">
+      <div class="cont">
+        <br />
+        <div class="slider rubik-regular mb-4">
+          <div class="slide slide1">
+            <div class="slider-content">
+              <div class="slide-person">
+                <div class="person">
+                  <img
+                    src="./img/avatars/man1.png"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                  <div class="information">
+                    <p class="ps name">Viezh Robert</p>
+                    <p class="ps city">Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div class="rate">
+                  <p class="ps mr-1">4.5</p>
+                  <img src="img/icons/star.svg" alt="rating Star" />
+                </div>
+              </div>
+
+              <div class="feedback">
+                <p>
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="slider-content">
+              <div class="slide-person">
+                <div class="person">
+                  <img
+                    src="./img/avatars/woman.png"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                  <div class="information">
+                    <p class="ps name">Yessica Christy</p>
+                    <p class="ps city">Shanxi, China</p>
+                  </div>
+                </div>
+                <div class="rate">
+                  <p class="ps mr-1">4.0</p>
+                  <img src="img/icons/star.svg" alt="rating Star" />
+                </div>
+              </div>
+
+              <div class="feedback">
+                <p>
+                  “I like it because I like to travel far and still can connect
+                  with high speed.”.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide3">
+            <div class="slider-content">
+              <div class="slide-person">
+                <div class="person">
+                  <img
+                    src="./img/avatars/man2.png"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                  <div class="information">
+                    <p class="ps name">Kim Young Jou</p>
+                    <p class="ps city">Seoul, South Korea</p>
+                  </div>
+                </div>
+                <div class="rate">
+                  <p class="ps mr-1">3.0</p>
+                  <img src="img/icons/star.svg" alt="rating Star" />
+                </div>
+              </div>
+
+              <div class="feedback">
+                <p>
+                  “This is very unusual for my business that currently requires
+                  a virtual private network that has high security.”.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slide slide4">
+            <div class="slider-content">
+              <div class="slide-person">
+                <div class="person">
+                  <img
+                    src="./img/avatars/woman2.png"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                  <div class="information">
+                    <p class="ps name">Jessica Cao</p>
+                    <p class="ps city">Rio de Janeiro, Brasil</p>
+                  </div>
+                </div>
+                <div class="rate">
+                  <p class="ps mr-1">4.3</p>
+                  <img src="img/icons/star.svg" alt="rating Star" />
+                </div>
+              </div>
+
+              <div class="feedback">
+                <p>
+                  “This is very unusual for my business that currently requires
+                  a virtual private network that has high security.This is very
+                  unusual for my business that currently requires a virtual
+                  private network that has high security.”.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="control display-flex">
+          <div class="control-slider">
+            <div class="points">
+              <button class="point"></button>
+              <button class="point"></button>
+              <button class="point"></button>
+              <button class="point"></button>
+            </div>
+          </div>
+          <div class="arrows mr-15">
+            <button class="arrow arrow-left mr-2" id="arrow-left">
+              <!-- <img
+                src="./img/icons/arrowRedLeft.png"
+                alt="slide Navigation left"
+                class="arrow-red-left"
+              />
+              <img
+                src="./img/icons/arrowWhiteLeft.png"
+                alt="slide Navigation left"
+                class="arrow-white-left hide"
+              /> -->
+            </button>
+            <button class="arrow arrow-right" id="arrow-right">
+              <!-- <img
+                src="./img/icons/arrowRedRight.png"
+                alt="slide Navigation right"
+                class="arrow-red-right"
+              />
+              <img
+                src="./img/icons/arrowWhiteRight.png"
+                alt="slide Navigation right"
+                class="arrow-white-right hide"
+              /> -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="sub mt-10 display-flex rubik-regular">
+        <div class="subscribe">
+          <h2 class="rubik-medium text-dark">
+            Subscribe Now for Get Special Features!
+          </h2>
+          <p class="text-dark-gray">
+            Let's subscribe with us and find the fun.
+          </p>
+        </div>
+        <button class="button mt-3">Subscribe now</button>
+      </div>
+    </div>
+    <div class="contat">
+      <footer class=" mr-15">
+        <div class="footer rubik-regular">
+          <div class="logo mb-1 display-flex">
+            <img src="./img/logo.jpg" alt="logo" width="35px" height="36px" />
+            <p class="rubik-medium text-dark ml-1">
+              Lasles<span class="rubik-bold">VPN</span>
+            </p>
+          </div>
+          <p class="pep text-dark-gray">
+            <span class="rubik-bold">LaslesVPN</span> is a private virtual
+            network that has unique features and has high security.
+          </p>
+          <div class="brand-icons mt-2 display-flex">
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <p class="text-gray mt-3">
+            &copy;2020Lasles<span class="rubik-bold">VPN</span>
+          </p>
+        </div>
+        <div class="rows rubik-regular display-flex">
+          <div class="row1">
+            <p><span class="rubik-bold">Product</span></p>
+            <p>Download</p>
+            <p>Pricing</p>
+            <p>Locations</p>
+            <p>Server</p>
+            <p>Countries</p>
+            <p>Blog</p>
+          </div>
+          <div class="row2">
+            <p><span class="rubik-bold">Engage</span></p>
+            <p>LaslesVPN ?</p>
+            <p>FAQ</p>
+            <p>Tutorials</p>
+            <p>About Us</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+          </div>
+          <div class="row3">
+            <p><span class="rubik-bold">Earn Money</span></p>
+            <p>Affiliate</p>
+            <p>Become Partner</p>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="app.js"></script>
+    <script src="mobileSlider.js"></script>
   </body>
 </html>

@@ -1,0 +1,49 @@
+// theme colors
+$primary: #2f6cee !default;
+$secondary: #31eda8 !default;
+$error: #ff0000;
+$info: #eed532;
+$accent: #34547A;
+$dark: #0B132A;
+$dark-gray: #4F5665;
+$primary-red: #F53838;
+$check: #2FAB73;
+
+
+
+
+// spacing
+$base-padding: 0.785rem;
+$base-margin: 0.785rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+// color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "primary-red": $primary-red,
+  "dark": $dark,
+  "dark-gray": $dark-gray,
+  "error": $error,
+  "info": $info,
+  "check": $check,
+  "accent": $accent,
+  "white": #fff,
+  "black": #000,
+  "purple": #9900ff,
+  "orange": #fd7a00,
+  "gray": #AFB5C0,
+);
+
+@debug map-get($colors, "purple");
+
+// Fonts sizes
+$base-font-size: 16px;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.25;
+$font-size-md: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

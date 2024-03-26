@@ -1,0 +1,48 @@
+$space_counts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+
+// m-2, m-3,
+@each $x in $space_counts {
+  .m-#{$x} {
+    margin: $x * $base-margin;
+  }
+
+  //mx-2, mx-3
+  .mt-#{$x} {
+    margin-top:  $x * $base-margin;
+  }
+
+  //my-2, my-3
+  .mb-#{$x} {
+    margin-bottom: $x * $base-margin ;
+  }
+
+  .ml-#{$x} {
+    margin-left: $x * $base-margin;
+  }
+  .mr-#{$x} {
+    margin-right: $x * $base-margin;
+  }
+
+
+
+  .p-#{$x} {
+    padding: $x * $base-padding;
+  }
+
+  //px-2, px-3
+  .pt-#{$x} {
+    padding-top:  $x * $base-padding;
+  }
+
+  //py-2, py-3
+  .pb-#{$x} {
+    padding-bottom: $x * $base-padding ;
+  }
+
+  .pl-#{$x} {
+    padding-left: $x * $base-padding;
+  }
+  .pr-#{$x} {
+    margin-right: $x * $base-padding;
+  }
+}

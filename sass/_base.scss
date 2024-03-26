@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1150px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+}
+.header {
+  justify-content: space-between;
+  @include sm {
+    justify-content: flex-start;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.rubik-bold {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.bottom-header p {
+  width: 545px;
+}
+.bottom-header {
+  width: 555px;
+  display: flex;
+  @include sm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+.rubik-medium {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.rubik-regular {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.display-flex {
+  display: flex;
+}
+
+// Mixin
+@mixin reset-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.logo p,
+.logo span {
+  font-size: $font-size-lg;
+}
+.logo p {
+  margin-top: 5px;
+}
+.brands img {
+  cursor: pointer;
+}
+.button {
+  width: 250px;
+  height: 60px;
+  background-color: $primary-red;
+  border: 1px solid $primary-red;
+  border-radius: 10px;
+  font-size: 16px;
+  color: aliceblue;
+  box-shadow: 1px 25px 40px #f5383859;
+  cursor: pointer;
+}
+.sign-in {
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+.first-title p {
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.first-title {
+  width: 555px;
+  margin-right: 40px;
+  @include sm {
+    margin-top: 0;
+  }
+}
+.first-title h1 {
+  font-size: $font-size-xxl + 2px;
+  line-height: 1.5;
+  width: 555px;
+  @include sm {
+    margin-top: 0;
+  }
+}
+ul {
+  @include reset-list;
+  display: flex;
+  margin-top: 8.62px;
+}
+.ul i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.ul li {
+  line-height: 3.5;
+}
+.feature-div p {
+  line-height: 2;
+  width: 450px;
+  color: $dark-gray;
+}
+.standart-title {
+  width: 555px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.standart-title h2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.standart-title p {
+  text-align: center;
+  line-height: 2.3;
+}
+.feature-div li {
+  color: $dark-gray;
+}
+.rest h3 {
+  font-size: $font-size-md;
+}
+.card {
+  width: 330px;
+  height: 760px;
+  border-radius: 10px;
+  border: 2px solid #dddddd;
+  background: #ffffff;
+  margin-right: 50px;
+  @include sm {
+    width: 80%;
+    height: 500px;
+
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+#burger-menu {
+  width: 50px;
+  height: 40px;
+  background: #dddddd;
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  @include sm {
+    display: block;
+  }
+}
+
+#nav {
+  @include sm {
+    display: none;
+    line-height: 2;
+  }
+}
+nav {
+  @include sm {
+    width: 100px;
+    margin-bottom: 0;
+  }
+}
+.h2 {
+  @include sm {
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+  }
+}
+.icon-div {
+  width: 55px;
+  height: 55px;
+  border-radius: 70px;
+  background-color: #ffecec;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card img {
+  margin-top: 79px;
+  margin-left: 92.55px;
+  margin-right: 92.55px;
+  @include sm {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.card i {
+  color: $check;
+  margin-right: 20px;
+}
+.card h3 {
+  text-align: center;
+  color: $dark;
+  margin-bottom: 30px;
+  @include sm {
+  }
+}
+.card ul {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 190px;
+  height: 150px;
+  line-height: 1.8;
+  @include sm {
+    margin-bottom: 0;
+    width: 190px;
+  }
+}
+.card h2 {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 20px;
+  @include sm {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+.reddd {
+  color: #d4d4d4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+.brands {
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+  @include sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+.brands img {
+  @include sm {
+    width: 800px;
+    height: 145px;
+  }
+}
+.map img {
+  @include sm {
+    max-width: 800px;
+    height: 420px;
+    min-width: 500px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+.round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #d4d4d4;
+}
+.spot {
+  color: #d4d4d4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34px;
+}
+.select {
+  font-size: 16px;
+  border: 2px solid $primary-red;
+  color: $primary-red;
+  border-radius: 50px;
+  width: 177.88px;
+  height: 45px;
+  margin-right: 76px;
+  margin-left: 76px;
+  cursor: pointer;
+  @include sm {
+    margin-left: 0;
+    margin-right: 0;
+    width: 85%;
+  }
+}
+
+.card li {
+  font-size: 14px;
+  color: $dark-gray;
+  @include sm {
+    margin-bottom: 0;
+    float: left;
+  }
+}
+.card img {
+  @include sm {
+    width: 180px;
+    height: 200px;
+  }
+}
+
+.cards {
+  margin-top: 60px;
+  @include sm {
+    display: block;
+  }
+}
+.mainIcons {
+  justify-content: space-around;
+  width: 1140px;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 78px;
+  height: 120px;
+  text-align: center;
+  @include sm {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+}
+a {
+  text-decoration: none;
+  color: $dark-gray;
+}
+.sign-btn {
+  color: $primary-red;
+  border: 1px solid $primary-red;
+  background-color: aliceblue;
+  width: 150px;
+  height: 45px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.ul {
+  display: block;
+}
+.feature-div {
+  width: 508px;
+  height: 417px;
+  margin-top: 55px;
+  margin-left: 150px;
+}
+.feature-div h3 {
+  font-size: 36px;
+  width: 400px;
+  margin-bottom: 15px;
+}
+.features {
+  width: 1000px;
+  @include sm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+}
+.slider {
+  width: 100%;
+
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  margin-right: 40px;
+  @include sm {
+    margin-right: 0;
+  }
+}
+
+.slider-content {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 400px;
+  height: 230px;
+  padding: 30px;
+}
+
+.slide-person {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+.feedback {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.rate {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  height: 16px;
+}
+
+.control-slider {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @include sm {
+    display: none;
+  }
+}
+
+.points {
+  display: flex;
+}
+
+.point {
+  background-color: #dde0e4;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  margin-right: 10px;
+  border: 0px;
+  transition: all 0.3s linear;
+}
+
+.arrows {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @include sm {
+    display: none;
+  }
+}
+
+.arrow {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #f53838;
+  background-color: #fff;
+  transition: all 0.15s linear;
+}
+
+.arrow-right {
+  background-color: #fff;
+  background-image: url("../img/icons/arrowRedRight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-right:hover {
+  background-color: #f53838;
+  transition: all 0.15s linear;
+  background-image: url("../img/icons/arrowWhiteRight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-left {
+  background-color: #fff;
+  background-image: url("../img/icons/arrowRedLeft.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-left:hover {
+  background-color: #f53838;
+  transition: all 0.15s linear;
+  background-image: url("../img/icons/arrowWhiteLeft.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.city {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.av {
+  width: 50px;
+  height: 50px;
+}
+
+.active-slide {
+  border: 2px solid #f53838;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.active-point {
+  width: 45px;
+  background-color: #f53838;
+}
+
+.hide {
+  display: none;
+}
+.cont {
+  width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  @include sm {
+    width: 463px;
+  }
+}
+.sub {
+  width: 1140px;
+  height: 233px;
+  justify-content: space-between;
+  @include sm {
+    display: block;
+    height: 300px;
+
+    margin-left: 300px;
+    text-align: center;
+  }
+}
+.subscribe {
+  width: 370px;
+
+  line-height: 1.5;
+}
+.subscribe h2 {
+  font-size: 35px;
+}
+.subscribe p {
+  margin-top: 15px;
+}
+.sub button {
+  margin-right: 70px;
+  @include sm {
+    text-align: center;
+    margin-right: 800px;
+
+    width: 250px;
+  }
+}
+.icon {
+  width: 33.6px;
+  height: 33.6px;
+  background: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.icon i {
+  color: $primary-red;
+}
+.pep {
+  width: 340px;
+  height: 61.57px;
+  line-height: 2;
+}
+.contat {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+footer {
+  width: 1150px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: flex;
+  @include sm {
+    display: block;
+  }
+}
+.footer {
+  @include sm {
+    margin-left: 300px;
+  }
+}
+.rows {
+  margin-left: 230px;
+  @include sm {
+    margin-left: 160px;
+  }
+}
+.row1 {
+  margin-right: 126px;
+
+  line-height: 2.5;
+  width: 74px;
+}
+.rows span {
+  font-size: 20px;
+}
+.row2 {
+  margin-right: 136px;
+  @include sm {
+    margin-right: 60px;
+  }
+  line-height: 2.5;
+  width: 140px;
+}
+.row3 {
+  line-height: 2.5;
+  width: 130px;
+}
