@@ -1,11 +1,11 @@
 const sliderLine = document.querySelector(".slider");
-const images = document.querySelectorAll(".slider .slide");
+const images = document.querySelectorAll(".slide");
 
 let btn_next = document.querySelector("#slider-next");
 let btn_prev = document.querySelector("#slider-prev");
 
 let currentet = 0;
-let width = 463;
+let width = 464;
 
 window.addEventListener("resize", init);
 if (btn_next && btn_prev) {
@@ -16,8 +16,8 @@ if (btn_next && btn_prev) {
 init();
 const PRESIGION = 100;
 function init() {
-  width = document.querySelector(".cont").offsetWidth;
-  let div = document.querySelector(".slide");
+  width = document.querySelector(".slider").offsetWidth;
+
   images.forEach((div) => {
     div.style.width = `${width}px`;
   });
