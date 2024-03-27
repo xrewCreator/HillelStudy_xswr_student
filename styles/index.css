@@ -454,13 +454,21 @@ a {
   display: flex;
   overflow: hidden;
 }
+@media (max-width: 960px) {
+  .slider {
+    width: 463px;
+  }
+}
 
 .slide {
   margin-right: 40px;
+  transition: all 1s linear;
 }
 @media (max-width: 960px) {
   .slide {
     margin-right: 0;
+    width: 463px;
+    transition: all 1s linear;
   }
 }
 

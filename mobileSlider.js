@@ -4,37 +4,39 @@ const images = document.querySelectorAll(".slider .slide");
 let btn_next = document.querySelector("#slider-next");
 let btn_prev = document.querySelector("#slider-prev");
 
-let current = 0;
+let currentet = 0;
 let width = 463;
 
 window.addEventListener("resize", init);
-btn_next.addEventListener("click", getNext);
-btn_prev.addEventListener("click", getPrev);
+if (btn_next && btn_prev) {
+  btn_next.addEventListener("click", getNext);
+  btn_prev.addEventListener("click", getPrev);
+}
 
 init();
-const PRESIGION = 40;
+const PRESIGION = 100;
 function init() {
   width = document.querySelector(".cont").offsetWidth;
-
+  let div = document.querySelector(".slide");
   images.forEach((div) => {
     div.style.width = `${width}px`;
   });
 }
 function roll() {
-  sliderLine.style.transform = `translate(-${current * width}px)`;
+  sliderLine.style.transform = `translate(-${currentet * width}px)`;
 }
 function getNext() {
-  current++;
-  if (current >= images.length) {
-    current = 0;
+  currentet++;
+  if (currentet >= images.length) {
+    currentet = 0;
   }
   roll();
 }
 
 function getPrev() {
-  current--;
-  if (current < 0) {
-    current = images.length - 1;
+  currentet--;
+  if (currentet < 0) {
+    currentet = images.length - 1;
   }
   roll();
 }
@@ -63,7 +65,7 @@ function touchEnd(event) {
   event.preventDefault();
   console.log("Touch End: ", x2, "  ", y2);
 
-  if (!x1 || !y1 || !x2 || !y2) return; 
+  if (!x1 || !y1 || !x2 || !y2) return;
 
   let dX = Math.abs(x2 - x1);
   let dY = Math.abs(y2 - y1);

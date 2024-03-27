@@ -391,7 +391,9 @@ a {
 }
 .slider {
   width: 100%;
-
+  @include sm {
+    width: 463px;
+  }
   display: flex;
   overflow: hidden;
 }
@@ -399,7 +401,11 @@ a {
   margin-right: 40px;
   @include sm {
     margin-right: 0;
+    width: 463px;
+    transition: all 1s linear;
   }
+  transition: all 1s linear;
+  
 }
 
 .slider-content {
